@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+#body1{
+    background-image: linear-gradient(to bottom, rgb(0,32,5), rgb(0,186,30));
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+#body2{
+    background-image: url(/imagens/fundo_futebol.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.imagem1{
+    width: 130px;
+}
+
+#imagem2{
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    width: 50px;
+}
+
+#imagem{
+    text-align: center;
+}
+
+.nav{
+    width: 20vh;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+.nav:hover+h2{
+    color: rgb(133, 35, 35);
+    text-decoration: underline;
+}
+
+.grid2{
+    display: grid;
+    margin-left: 15%;
+    margin-top: 8vh;
+    width: 66%;
+    height: 30vh;
+    grid-template-areas: "texto imagem" "void imagem";
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: 100% 1fr;
+    cursor: pointer;
+}
+
+.grid2>header{
+    grid-area: imagem;
+}
+
+.grid2>main{
+    grid-area: texto;
+    background-color: whitesmoke;
+    font-size: 24px;
+    color: darkgrey;
+    text-align: center;
+    font-family: 'Otomanopee One';
+}
+
+.grid2>footer{
+    grid-area: void;
+    background-color: transparent;
+}
+
+.grid2>main:hover{
+    background-color: rgb(133, 35, 35);
+    color: yellow;
+}
+
+.grid2>header:hover+main{
+    background-color: rgb(133, 35, 35);
+    color: yellow;
+}
+
+.grid3{
+    display: grid;
+    margin-left: 15%;
+    margin-top: 8vh;
+    width: 66%;
+    height: 30vh;
+    grid-template-areas: "imagem texto" "imagem void";
+    grid-template-columns: 1fr 75%;
+    grid-template-rows: 100% 1fr;
+    cursor: pointer;
+}
+
+.grid3>header{
+    grid-area: imagem;
+}
+
+.grid3>main{
+    grid-area: texto;
+    background-color: whitesmoke;
+    font-size: 24px;
+    color: darkgrey;
+    text-align: center;
+    font-family: 'Otomanopee One';
+}
+
+.grid3>footer{
+    grid-area: void;
+    background-color: transparent;
+}
+
+.grid3>main:hover{
+    background-color: rgb(133, 35, 35);
+    color: yellow;
+}
+
+.grid3>header:hover+main{
+    background-color: rgb(133, 35, 35);
+    color: yellow;
+}
+
+.grid4{
+    width: 10%;
+    height: 8vh;
+}
+
+.header{
+    height: 30vh;
+}
+
+h1{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+h2{
+    font-size: 14px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+h2:hover{
+    color: rgb(133, 35, 35);
+    text-decoration: underline;
+}
+
+h3{
+    color: black;
+    font-size: 19px;
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.container{
+    width: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+    padding: 2% 2%;
+}
+
+.links2{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    height: 42px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 216, 216);
+    transition: 0.1s ease-in-out;
+    color: rgb(255, 216, 216);
+}
+
+.field{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.field2{
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(255, 216, 216);
+    transform: translateY(18px);
+    transition: 0.1s ease-in-out;
+}
+
+input:focus{
+    border-bottom: 2px solid rgb(133, 35, 35);
+    box-shadow: 0 1px 0 0 rgb(133, 35, 35);
+}
+
+input:focus + label{
+    transform: translateY(-14px) scale(0.85);
+    color: rgb(133, 35, 35);
+    font-weight: bold;
+}
+
+input:not(:placeholder-shown) + label{
+    transform: translateY(-14px) scale(0.75);
+    font-weight: bold;
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+.button1{
+    padding: 6% 30%;
+    margin-top: 12%;
+    margin-bottom: 19%;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid rgb(255, 245, 245);
+    color: rgb(255, 245, 245);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.button2{
+    padding: 5% 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid rgb(255, 245, 245);
+    color: rgb(255, 245, 245);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.center{
+    text-align: center;
+}
+
+button:hover{
+    border: 3px solid rgb(133, 35, 35);
+    color: rgb(133, 35, 35);
+}
+
+a:not("a2"){
+    text-decoration: none;
+    color: rgb(255, 216, 216);
+    transition: ease-in-out 0.1s;
+    font-size: 10px;
+}
+
+a:hover{
+    color: rgb(133, 35, 35);
+}
+
+#a2{
+    color: whitesmoke;
+}
+
+#a2:hover{
+    color: teal;
+}
+
+#grid{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: "head head" "nav main" "foot foot";
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 80px 1fr 45px;
+}
+
+#grid>header{
+    grid-area: head;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 68px;
+    color: red;
+}
+
+#grid>nav{
+    grid-area: nav;
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+}
+
+#grid>main{
+    grid-area: main;
+    background-color: rgba(19, 19, 19, 0.8);
+}
+
+#grid>footer{
+    grid-area: foot;
+    background-color: rgb(133, 35, 35);
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+tt{
+    padding-left: 3%;
+}
+
+#tt2{
+    padding-left: 24%;
+}
+
+#imagem3{
+    width: 0px;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1023px){
+
+    #body1{
+        background-image: linear-gradient(to bottom, rgb(0,32,5), rgb(0,186,30));
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #body2{
+        background-image: url(/imagens/fundo_futebol.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+    }
+
+    .imagem1{
+        width: 25vh;
+    }
+    
+    #imagem{
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .quadrado{
+        width: 50%;
+        height: 25vh;
+        color: transparent;
+    }
+    
+    h1{
+        font-size: 28px;
+        color: white;
+        text-align: center;
+        margin: 30px;
+    }
+    
+    .container{
+        width: 100%;
+        height: 90%;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5%;
+        padding: 2% 2%;
+    }
+    
+    input{
+        width: 100%;
+        height: 42px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(255, 216, 216);
+        transition: 0.1s ease-in-out;
+        color: rgb(255, 216, 216);
+    }
+    
+    .field{
+        position: relative;
+        margin-bottom: 25px;
+    }
+    
+    label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgb(255, 216, 216);
+        transform: translateY(18px);
+        transition: 0.1s ease-in-out;
+    }
+    
+    input:focus{
+        border-bottom: 2px solid rgb(133, 35, 35);
+        box-shadow: 0 1px 0 0 rgb(133, 35, 35);
+    }
+    
+    input:focus + label{
+        transform: translateY(-14px) scale(0.85);
+        color: rgb(133, 35, 35);
+        font-weight: bold;
+    }
+    
+    input:not(:placeholder-shown) + label{
+        transform: translateY(-14px) scale(0.75);
+        font-weight: bold;
+    }
+    
+    input::placeholder{
+        color: transparent;
+    }
+    
+    .button1{
+        padding: 3vh 25%;
+        margin-top: 7vh;
+        margin-bottom: 12vh;
+        font-size: 20px;
+        background: transparent;
+        border: 3px solid rgb(255, 245, 245);
+        color: rgb(255, 245, 245);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: ease-in-out 0.1s;
+    }
+    
+    .button2{
+        padding: 5% 20%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        background: transparent;
+        border: 3px solid rgb(255, 245, 245);
+        color: rgb(255, 245, 245);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: ease-in-out 0.1s;
+    }
+    
+    .center{
+        text-align: center;
+    }
+    
+    button:hover{
+        border: 3px solid rgb(133, 35, 35);
+        color: rgb(133, 35, 35);
+    }
+    
+    a:not("a2"){
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 216, 216);
+        transition: ease-in-out 0.1s;
+        font-size: 10px;
+    }
+    
+    a:hover{
+        color: rgb(133, 35, 35);
+    }
+
+    #grid{
+        display: grid;
+        position: absolute;
+        width: 100%;
+        grid-template-areas: "head head" "main main" "foot foot";
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 12vh 1fr 10vh;
+    }
+    
+    #grid>header{
+        grid-area: head;
+        background-color: whitesmoke;
+        text-align: center;
+        font-size: 68px;
+        color: red;
+    }
+    
+    #grid>nav{
+        display: none;
+    }
+    
+    #grid>main{
+        grid-area: main;
+        background-color: rgba(19, 19, 19, 0.8);
+    }
+    
+    #grid>footer{
+        grid-area: foot;
+        background-color: rgb(133, 35, 35);
+        font-size: 18px;
+        color: whitesmoke;
+    }
+
+    .header{
+        width: 0px;
+    }
+
+    h3{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .grid2{
+        margin-left: 5%;
+        margin-top: 8vh;
+        width: 118%;
+        height: 36vh;
+        cursor: pointer;
+    }
+    
+    .grid2>header{
+        display: none;
+    }
+    
+    .grid2>main{
+        background-color: rgb(133, 35, 35);
+        font-size: 21px;
+        color: yellow;
+        text-align: center;
+        font-family: 'Otomanopee One';
+    }
+    
+    .grid2>footer{
+        display: none;
+    }
+
+    .grid3{
+        margin-left: -24%;
+        margin-top: 8vh;
+        width: 118%;
+        height: 36vh;
+        cursor: pointer;
+    }
+    
+    .grid3>header{
+        display: none;
+    }
+    
+    .grid3>main{
+        background-color: rgb(133, 35, 35);
+        font-size: 21px;
+        color: yellow;
+        text-align: center;
+        font-family: 'Otomanopee One';
+    }
+    
+    .grid3>footer{
+        display: none;
+    }
+
+    tt:not(#tt2){
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    #tt2{
+        font-size: 12px;
+        margin-left: -12%;
+    }
+
+    #a2{
+        text-decoration: none;
+        color: rgb(255, 216, 216);            
+        transition: ease-in-out 0.1s;
+        font-size: 10px;
+    }
+
+    #imagem2{
+        position: absolute;
+        left: 85%;
+        top: 3%;
+        width: 45px;
+    }
+
+    #imagem3{
+        position: absolute;
+        left: 5%;
+        top: 3%;
+        width: 40px;
+    }
+}
