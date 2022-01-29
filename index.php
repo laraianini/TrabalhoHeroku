@@ -27,12 +27,11 @@
         </div>
 
         <div class="center">
-            <a href="http://127.0.0.1:5500/trabalho_ferias/login.html">
             <button class="button2" onclick="mensagem()">Continuar</button></a>
         </div>
 
         <div class="links2">
-            <a href="http://127.0.0.1:5500/trabalho_ferias/login.html"><h2>Cancelar</h2></a>
+            <a><h2>Cancelar</h2></a>
         </div>
     </div>
 </body>
